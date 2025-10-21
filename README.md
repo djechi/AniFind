@@ -24,6 +24,7 @@ Authors: [DJ Echipare](https://github.com/djechi) [Alvin Truong](https://github.
 
 ### What will be the input/output of your project?
 - **Input:** User loads the home page → **Output:** Display of "Highest Rated" and "Trending" anime lists
+- **Input:** User loads the recommendation page → **Output:** Display recommendation title, description, and search bar/button
 - **Input:** User types in search bar → **Output:** Auto-complete dropdown with matching anime titles
 - **Input:** User submits search request → **Output:** Curated list of similar anime 
 
