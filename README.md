@@ -54,14 +54,39 @@ Authors: [DJ Echipare](https://github.com/djechi) [Alvin Truong](https://github.
  >     * The tasks you are planning for the first sprint
  >     * How work will be divided between the team members
 ## User Interface Specification
- > Include a navigation diagram for your screens and the layout of each of those screens as desribed below. For all the layouts/diagrams, you can use any tool such as PowerPoint or a drawing program. (Specification requirement is adapted from the User Interface Design Document Template of CMSC 345 at the University of Maryland Global Campus)
 
 ### Navigation Diagram
-> Draw a diagram illustrating how the user can navigate from one screen to another. Here is an [example](https://creately.com/diagram/example/ikfqudv82/user-navigation-diagram-classic?r=v). Nodes represent the different screens in your program and arrows represent the way to navigate from one screen to another. It can be useful to label each symbol that represents a screen so that you can reference the screens in the next section or the rest of the document if necessary. Give a brief description of what the diagram represents.
+- Displays how the user will navigate through each webpage (Home, Recommendation, About), and what each web page will contain.
+<img width="938" height="998" alt="image" src="https://github.com/user-attachments/assets/9c167db9-d9ba-440e-9646-99e400961fe0" />
 
 ### Screen Layouts
-> Include the layout of each of your screens. The layout should describe the screen’s major components such as menus and prompts for user inputs and expected output, or any graphical user interface components if applicable (e.g. buttons, text boxes, etc). Explain what is on the layout, and the purpose of each menu item, button, etc. If many screens share the same layout, start by describing the general layout and then list the screens that will be using that layout and the differences between each of them.
+- General components
+  - Header: Includes a menu at the top of the screen, allowing the user to travel from each webpage 
+  - Footer: Includes a menu at the bottom of the screen, allowing the user to travel from each webpage 
+  - Lists: include a column/row of "show cards" that display each anime image, title, genre, and rating
+    
+- Home Page
+  - Header
+  - Trending anime: list for trending anime 
+  - Highest rated anime: list ordering anime by highest rating
+  - Footer
+<img width="580" height="1374" alt="image" src="https://github.com/user-attachments/assets/d3795875-dd5b-4873-9562-d650e6818715" />
 
+- Recommendation Page
+  - Header
+  - Search bar: a search bar that allows user input and gives a drop-down of autocompleted suggestions based on available anime
+  - Search button: a search button that is used to activate/generate a list of recommended anime based on the user's search input
+  - Recommended anime: list filled with similar anime is generated after the user input is given
+  - Footer
+<img width="578" height="1064" alt="image" src="https://github.com/user-attachments/assets/1e0ac0d9-0560-4077-b0a4-0cf025e1ddde" />
+
+- About Page
+  - Header
+  - Our Goal: Includes title and paragraph explaining the purpose of the website
+  - Contributors: Includes title and paragraph displaying the contributors of the website
+  - Footer
+<img width="580" height="706" alt="image" src="https://github.com/user-attachments/assets/def22cd5-381c-4d59-b514-edcf43bb1388" />
+  
 ## Class Diagram
  > Include a **class diagram(s)** for your project and a **description** of the diagram(s). Your class diagram(s) should include all the main classes you plan for the project. This should be in sufficient detail that another group could pick up the project this point and successfully complete it. Use proper UML notation (as discussed in the course slides).
  
