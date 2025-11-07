@@ -123,6 +123,7 @@ Authors: [DJ Echipare](https://github.com/djechi) [Alvin Truong](https://github.
 **Postconditions**
 - Recommended anime list is displayed
 
+
 **Main Flow:**
 1. User clicks **Search/Recommend**
 2. System sends title to backend recommendation engine.
