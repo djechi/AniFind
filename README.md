@@ -55,6 +55,84 @@ Authors: [DJ Echipare](https://github.com/djechi) [Alvin Truong](https://github.
  >     * How work will be divided between the team members
 ## User Interface Specification
 
+### Use Cases
+
+#### Use Case 1 - Browse Home Page Anime Lists
+**Goal:** Let the user immediately see what anime are trending/airing when opening the website
+**Primary Actor** Visitor of website
+**Preconditions**
+- User navigates to the **Home** page.
+- System can access the database
+**Postconditions**
+- User sees **Trending Anime** and **Highest Rated** lists
+
+**Main Flow:**
+1. User navigates to AniFind **Home** page.
+2. System loads list of currently trending anime.
+3. System loads a list of highest-rated anime.
+4. System displays both lists as rows/columns of anime cards (image, title, genre rating).
+5. User scrolls to browse the available anime.
+
+**Alternative Flow - Page Load Error:**
+1. If page fails to load, display error message and allow navigation to continue being used.
+
+--
+
+#### Use Case 2 - View Anime Details
+**Goal:** Let the user learn more about the anime they view in the database
+**Primary Actor** Visitor of website
+**Preconditions**
+- User can view anime details on any page
+**Postconditions**
+- Selected anime's details are displayed (description, genres, rating, etc.)
+
+**Main Flow:**
+1. User clicks on anime they are inquiring about.
+2. System fetches detailed information about the anime.
+3. System displays details (in a modal or a seperate page).
+
+**Alternative Flow - Details Not Found:**
+1. If data fails to load, display message "Details unavailable" and return.
+
+--
+
+#### Use Case 3 - Searching For an Anime Title
+**Goal:** Let the user find an anime title with autocomplete
+**Primary Actor** Visitor of website
+**Preconditions**
+- User is on **Recommendation** page and search bar is visible
+**Postconditions**
+- User selects title or submits search query
+
+**Main Flow:**
+1. User types in search bar.
+2. System displays autocomplete dropdown with matching anime titles.
+3. User selects a title from suggestions.
+
+**Alternative Flows:**
+1. No matches -> display "No results found".
+2. User skips autocomplete and presses Enter to search manually.
+
+--
+
+#### Use Case 4 - Generate Anime Recommendations
+**Goal:** Provide recommendations similar to selected anime
+**Primary Actor** Visitor of website
+**Preconditions**
+- Valid anime title is selected
+**Postconditions**
+- Recommended anime list is displayed
+
+**Main Flow:**
+1. User clicks **Search/Recommend**
+2. System sends title to backend recommendation engine.
+3. Recommendation engine finds similar anime.
+4. System displays recommnded anime as card (image, title, genre, rating).
+
+**Alternative Flows:**
+1. No results -> display "No recommendations found for this title".
+2. Invalid title -> "Anime not found" error, user can edit input.
+
 ### Navigation Diagram
 - Displays how the user will navigate through each webpage (Home, Recommendation, About), and what each web page will contain.
 <img width="938" height="998" alt="image" src="https://github.com/user-attachments/assets/9c167db9-d9ba-440e-9646-99e400961fe0" />
