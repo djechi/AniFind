@@ -20,7 +20,7 @@ Authors: [DJ Echipare](https://github.com/djechi) [Alvin Truong](https://github.
  - Anime is a diverse medium of animation from Japan that contains many different genres. Due to its sheer volume, it can be overwhelming for new viewers to find anime shows and movies they would enjoy watching. This project is interesting to us as it looks to solve this discovery problem. As such, creating a recommendation website dedicated to anime can help others explore this niche and gain insight about different anime that align with their tastes.
 
 ### What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
-- We will use Python with Flask for the backend API and React with TypeScript for the frontend user interface. GitHub will be used for version control along with VS Code as our development environment. For testing, we will use pytest and tracemalloc for the Python backend, and Jest with React Testing Library for the frontend components.
+- We will use Python with Flask for the backend API and Vite/React with TypeScript/TailwindCSS for the frontend user interface. GitHub will be used for version control along with VS Code as our development environment. For testing, we will use pytest and tracemalloc for the Python backend, and Jest with React Testing Library for the frontend components.
 
 ### What will be the input/output of your project?
 - **Input:** User loads the home page → **Output:** Display of "Highest Rated" and "Trending" anime lists
