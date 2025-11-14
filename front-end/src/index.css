@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import "tailwindcss";
+
+    @theme{
+        --color-ani-black-100: #222020;
+        --color-ani-black-200: #1E1E1E;
+        --color-ani-grey-100: #828282;
+        --color-ani-grey-200: #878787;
+        --color-ani-white-100: #FFFFFF;
+
+        --font-ani-default: "Inter", serif;
+    }
+
+
+    body {
+        background-color: #222020; /* Replace 'lightblue' with your desired color name, hex code, RGB, or HSL value */
+    }
