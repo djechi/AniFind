@@ -1,12 +1,14 @@
 from flask import Flask
+from homePage import homeBP
 
 app = Flask(__name__)
 
-# Members API ROUTE
-@app.route("/members")
+#Test
+@app.route("/helloWorld")
 def members():
-    return {"members": ["Member1", "Member2", "Member3"]}
+    return "Hello World"
 
+app.register_blueprint(homeBP)
 
 if __name__ == "__main__":
     app.run(debug=True)
