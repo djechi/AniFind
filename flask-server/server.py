@@ -1,6 +1,5 @@
 from flask import Flask
 from homePage import homeBP
-import requests
 
 app = Flask(__name__)
 
