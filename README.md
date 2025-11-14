@@ -21,6 +21,8 @@ Authors: [DJ Echipare](https://github.com/djechi) [Alvin Truong](https://github.
 
 ### What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
 - We will use Python with Flask for the backend API and Vite/React with TypeScript/TailwindCSS for the frontend user interface. GitHub will be used for version control along with VS Code as our development environment. For testing, we will use pytest and tracemalloc for the Python backend, and Jest with React Testing Library for the frontend components.
+- The backend API we will be using is Jikan API (4.0.0), an open-source REST API.
+- API Documentation: https://docs.api.jikan.moe
 
 ### What will be the input/output of your project?
 - **Input:** User loads the home page → **Output:** Display of "Highest Rated" and "Trending" anime lists
