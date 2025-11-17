@@ -8,17 +8,16 @@ def trendingAnime():
     urlTrending = restAPI + "top/anime?filter=airing"
     return requests.get(urlTrending).json()
 
-def ratingsAnime():
-    anime_id = 21
-    urlRating = f"{restAPI}anime/{anime_id}/statistics"
+def topRatingsAnime():
+    urlRating = restAPI + "top/anime"
     return requests.get(urlRating).json()
 
-@homeBP.route("/home")
+@homeBP.route("/home", methods=["GET"])
 def homePage():
     trendingData = trendingAnime()
-    animeData = ratingsAnime()
+    animeData = topRatingsAnime()
 
     return {
-        "trending": trendingData["data"],
-        "data": animeData["data"]
+        "Trending Anime": trendingData["data"],
+        "Highest Rated Anime": animeData["data"]
     }
