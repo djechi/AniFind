@@ -4,7 +4,7 @@
     @theme{
         --color-ani-black-100: #222020;
         --color-ani-black-200: #1E1E1E;
-        --color-ani-grey-100: #828282;
+        --color-ani-grey-100: #BBBBBB;
         --color-ani-grey-200: #878787;
         --color-ani-white-100: #FFFFFF;
 
@@ -12,5 +12,7 @@
     }
 
     body {
-        background-color: #222020; /* Replace 'lightblue' with your desired color name, hex code, RGB, or HSL value */
+        background-color: #222020; 
     }
+
+    
