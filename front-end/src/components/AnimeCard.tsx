@@ -1,9 +1,9 @@
 import type {FC} from "react";
 import type { AnimeCardProps } from "../types/interfaces.ts";
 
-const AnimeCard: FC<AnimeCardProps> = ({ title, image, genre, rating, episodes }) => {
+const AnimeCard: FC<AnimeCardProps> = ({ title, image, genre, rating }) => {
     return(
-        <div className = "items-center text-left h-[40vh] w-[40vh]">
+        <div className = "items-center text-left h-[25vh] w-[25vh]">
             <img
             src = { image }
             alt = { title }
@@ -21,11 +21,6 @@ const AnimeCard: FC<AnimeCardProps> = ({ title, image, genre, rating, episodes }
             <p className= "font-ani-default text-ani-grey-100 text-[2vh] mt-[0.6vh]">
                 Rating: { rating }
             </p>
-
-            <p className= "font-ani-default text-ani-grey-100 text-[2vh] mt-[0.6vh]">
-                { episodes } Episodes
-            </p>
-
         </div>
     );
 };
