@@ -93,7 +93,9 @@ Figma Link: https://www.figma.com/design/hPtur90ZxpL8rufZbKKvje/AniFind?node-id=
   
 ## Class Diagram
  > Include a **class diagram(s)** for your project and a **description** of the diagram(s). Your class diagram(s) should include all the main classes you plan for the project. This should be in sufficient detail that another group could pick up the project this point and successfully complete it. Use proper UML notation (as discussed in the course slides).
-> <img width="754" height="591" alt="image" src="https://github.com/user-attachments/assets/d4c6105c-da9e-4c63-a909-9d6c9e53bdb3" />
+> <img width="1688" height="1320" alt="image" src="https://github.com/user-attachments/assets/00f885d1-3877-47eb-b2f4-7840bdbbdc0c" />
+> One of the SOLID Principles that I applied was the Interface Segregation Principle, which involved creating a separate JSON file for recommendations. Previously, the recommendations were displayed on the home page, but they should have been on the recommendation page. This change helped me write better code, as the logic for the recommendation was now in the correct Python file, which helped me distinguish what functions belong to each file.  Another SOLID Principle that I applied was the Single-Responsibility Principle, which involved creating separate Flask routes for the JSON files. This ensured that the flask routes had the correct JSON files and ones not needed for that specific route.
+
 
  
  > ## Phase III
