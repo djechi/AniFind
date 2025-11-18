@@ -1,4 +1,5 @@
-from flask import Blueprint, request, requests
+from flask import Blueprint, request
+import requests
 
 recommendBP = Blueprint("recommendBP", __name__)
 restAPI = "https://api.jikan.moe/v4/"
