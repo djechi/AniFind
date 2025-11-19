@@ -3,14 +3,14 @@ import type { AnimeCardProps } from "../types/interfaces.ts";
 
 const AnimeCard: FC<AnimeCardProps> = ({ title, image, genre, rating }) => {
     return(
-        <div className = "items-center text-left h-[25vh] w-[25vh]">
+        <div className = "items-center justify-center text-left h-[40vh] w-[32vh]">
             <img
             src = { image }
             alt = { title }
-            className = "h-full w-full mx-auto rounded-2xl mt-[0.6vh]"
+            className = "h-full w-full object-cover rounded-2xl mt-[0.6vh] hover:shadow-lg shadow-amber-300"
             />
 
-            <p className= "font-ani-default text-ani-white-100 text-[3vh] mt-[0.6vh]">
+            <p className= "font-ani-default text-ani-white-100 text-[3vh] mt-[2vh]">
                 { title }
             </p>
 
