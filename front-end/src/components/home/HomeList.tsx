@@ -59,7 +59,7 @@ const AnimeCardDisplay = () => {
                 </div>
             </div>
 
-            <div className = "mt-[30vh]">
+            <div className = "mt-[36vh]">
                 <p className = "font-ani-default text-ani-white-100 text-[5vh] mb-[3vh] text-left">
                     Highest Rated Anime
                 </p>
