@@ -15,9 +15,9 @@ def topRatingsAnime():
 @homeBP.route("/home", methods=["GET"])
 def homePage():
     trendingData = trendingAnime()
-    animeData = topRatingsAnime()
+    topRatedData = topRatingsAnime()
 
     return {
-        "Trending Anime": trendingData["data"],
-        "Highest Rated Anime": animeData["data"]
+        "trending": trendingData["data"],
+        "rating": topRatedData["data"]
     }

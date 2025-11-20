@@ -1,10 +1,10 @@
-import AnimeCardDisplay from "./components/AnimeCardDisplay"
+import TrendingRatingLists from "./components/home/HomeList"
 
 const App = () => {
 
   return (
     <>
-      <AnimeCardDisplay />
+      <TrendingRatingLists />
     </>
   )
 }
