@@ -12,6 +12,9 @@ def recommendedAnime():
 
 @recommendBP.route("/suggestions", methods=["GET"])
 def suggestionsAnime():
-    query = request.args.get("query", "")
+    query = request.args.get("q")
+    if not query:
+        return {"data": []}
+
     urlSuggestions = f"{restAPI}anime?q={query}"
     return requests.get(urlSuggestions).json()
