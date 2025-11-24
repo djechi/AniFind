@@ -4,21 +4,14 @@ import requests
 recommendBP = Blueprint("recommendBP", __name__)
 restAPI = "https://api.jikan.moe/v4/"
 
+@recommendBP.route("/recommendations", methods=["GET"])
 def recommendedAnime():
-    urlRecommended = restAPI + "recommendations/anime"
+    anime_id = request.args.get("anime_id", "")
+    urlRecommended = f"{restAPI}anime/{anime_id}/recommendations"
     return requests.get(urlRecommended).json()
 
-def searchAnime(query):
-    urlSearch = f"{restAPI}anime?q={query}"
-    return requests.get(urlSearch).json()
-
-@recommendBP.route("/recommend", methods=["GET"])
-def recommendPage():
-    recommendedAnimeData = recommendedAnime()
-    query = request.args.get("q")
-    searchResults = searchAnime(query)["data"]
-
-    return {
-        "Recommendations": recommendedAnimeData["data"],
-        "Search Result": searchResults
-    }
+@recommendBP.route("/suggestions", methods=["GET"])
+def suggestionsAnime():
+    query = request.args.get("query", "")
+    urlSuggestions = f"{restAPI}anime?q={query}"
+    return requests.get(urlSuggestions).json()
