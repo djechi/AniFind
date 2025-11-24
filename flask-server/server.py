@@ -6,11 +6,6 @@ from recommendPage import recommendBP
 app = Flask(__name__)
 CORS(app)
 
-#Test
-@app.route("/helloWorld")
-def members():
-    return "Hello World"
-
 app.register_blueprint(homeBP)
 app.register_blueprint(recommendBP)
 
