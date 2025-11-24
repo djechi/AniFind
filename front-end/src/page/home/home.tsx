@@ -1,12 +1,11 @@
-import TrendingRatingLists from "../../components/home/HomeList"
+import TrendingRatingLists from "../../components/home/HomeList";
 
 const Page = () => {
-
   return (
     <>
       <TrendingRatingLists />
     </>
-  )
-}
+  );
+};
 
-export default Page
+export default Page;

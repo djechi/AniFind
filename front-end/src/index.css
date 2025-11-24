@@ -1,19 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 @import "tailwindcss";
 
-    @theme{
-        --color-ani-black-100: #222020;
-        --color-ani-black-200: #1E1E1E;
-        --color-ani-grey-100: #BBBBBB;
-        --color-ani-grey-200: #878787;
-        --color-ani-grey-300: #343434;
-        --color-ani-white-100: #FFFFFF;
-        --color-ani-green-100: #B4DD44;
-        --font-ani-default: "Inter", serif;
-    }
+@theme {
+  --color-ani-black-100: #222020;
+  --color-ani-black-200: #1e1e1e;
+  --color-ani-grey-100: #bbbbbb;
+  --color-ani-grey-200: #878787;
+  --color-ani-grey-300: #343434;
+  --color-ani-white-100: #ffffff;
+  --color-ani-green-100: #b4dd44;
+  --font-ani-default: "Inter", serif;
+}
 
-    body {
-        background-color: #222020; 
-    }
-
-    
+body {
+  background-color: #222020;
+}
