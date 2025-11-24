@@ -22,10 +22,9 @@ def test_home_page(mock_get, client):
 
     data = response.get_json()
     print(data)
-    
+
     assert response.status_code == 200
 
-    data = response.get_json()
     assert data["trending"][0]["title"] == "Trending #1"
     assert data["rating"][0]["title"] == "Top Rated #1"
 
