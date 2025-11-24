@@ -19,6 +19,10 @@ def test_home_page(mock_get, client):
     ]
 
     response = client.get("/home")
+
+    data = response.get_json()
+    print(data)
+    
     assert response.status_code == 200
 
     data = response.get_json()
