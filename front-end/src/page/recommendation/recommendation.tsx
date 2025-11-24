@@ -1,9 +1,11 @@
-const Page = () => {
+import SearchButton from "../../components/recommendation/SearchBar";
 
+const Page = () => {
   return (
     <>
+      <SearchButton />
     </>
-  )
-}
+  );
+};
 
-export default Page
+export default Page;
