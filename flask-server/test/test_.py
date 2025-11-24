@@ -19,13 +19,26 @@ def test_home_page(mock_get, client):
     ]
 
     response = client.get("/home")
-
     data = response.get_json()
     print(data)
 
     assert response.status_code == 200
-
     assert data["trending"][0]["title"] == "Trending #1"
     assert data["rating"][0]["title"] == "Top Rated #1"
+    assert mock_get.call_count == 2
 
+@patch("recommendPage.requests.get")
+def test_recommend_page(mock_get,client):
+    mock_get.return_value.json.side_effect = [
+        {"data": [{"title": "Recommend #1"}]},
+        {"data": [{"title": "Bleach"}]}
+    ]
+
+    response = client.get("/recommend?q=bleach")
+    data = response.get_json()
+    print(data)
+
+    assert response.status_code == 200
+    assert data["Recommendations"][0]["title"] == "Recommend #1"
+    assert data["Search Result"][0]["title"] == "Bleach"
     assert mock_get.call_count == 2
