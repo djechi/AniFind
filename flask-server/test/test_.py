@@ -25,20 +25,40 @@ def test_home_page(mock_get, client):
     assert response.status_code == 200
     assert data["trending"][0]["title"] == "Trending #1"
     assert data["rating"][0]["title"] == "Top Rated #1"
-    assert mock_get.call_count == 2
 
-@patch("recommendPage.requests.get")
-def test_recommend_page(mock_get,client):
-    mock_get.return_value.json.side_effect = [
-        {"data": [{"title": "Recommend #1"}]},
-        {"data": [{"title": "Bleach"}]}
+    expected_urls = [
+    "https://api.jikan.moe/v4/top/anime?filter=airing",
+    "https://api.jikan.moe/v4/top/anime",
     ]
 
-    response = client.get("/recommend?q=bleach")
+    actual_urls = [call.args[0] for call in mock_get.call_args_list]
+    assert actual_urls == expected_urls
+
+
+@patch("recommendPage.requests.get")
+def test_recommendations(mock_get, client):
+    mock_get.return_value.json.return_value = {
+        "data": [{"title": "Recommend #1"}]
+    }
+
+    response = client.get("/recommendations?anime_id=1")
     data = response.get_json()
     print(data)
 
     assert response.status_code == 200
-    assert data["Recommendations"][0]["title"] == "Recommend #1"
-    assert data["Search Result"][0]["title"] == "Bleach"
-    assert mock_get.call_count == 2
+    assert data["data"][0]["title"] == "Recommend #1"
+    mock_get.assert_called_once_with("https://api.jikan.moe/v4/anime/1/recommendations")
+
+@patch("recommendPage.requests.get")
+def test_suggestions(mock_get, client):
+    mock_get.return_value.json.return_value = {
+        "data": [{"title": "Bleach"}]
+    }
+
+    response = client.get("/suggestions?query=bleach")
+    data = response.get_json()
+    print(data)
+
+    assert response.status_code == 200
+    assert data["data"][0]["title"] == "Bleach"
+    mock_get.assert_called_once_with("https://api.jikan.moe/v4/anime?q=bleach")
