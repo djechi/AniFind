@@ -82,7 +82,7 @@ Figma Link: https://www.figma.com/design/hPtur90ZxpL8rufZbKKvje/AniFind?node-id=
   - Search button: a search button that is used to activate/generate a list of recommended anime based on the user's search input
   - Recommended anime: list filled with similar anime is generated after the user input is given
   - Footer
-<img width="580" height="1374" alt="image" src="https://github.com/user-attachments/assets/18048435-720a-41ec-8892-95c51f1d0e6b" />
+<img width="580" height="1374" alt="image" src="https://github.com/user-attachments/assets/5d7de869-2d35-434f-a865-c014955ba07f" />
 
 - About Page
   - Header
