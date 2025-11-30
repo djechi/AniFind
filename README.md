@@ -20,7 +20,7 @@ Authors: [DJ Echipare](https://github.com/djechi) [Alvin Truong](https://github.
  - Anime is a diverse medium of animation from Japan that contains many different genres. Due to its sheer volume, it can be overwhelming for new viewers to find anime shows and movies they would enjoy watching. This project is interesting to us as it looks to solve this discovery problem. As such, creating a recommendation website dedicated to anime can help others explore this niche and gain insight about different anime that align with their tastes.
 
 ### What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
-- We will use Python with Flask for the backend API and Vite/React with TypeScript/TailwindCSS for the frontend user interface. GitHub will be used for version control along with VS Code as our development environment. For testing, we will use pytest and tracemalloc for the Python backend, and Jest with React Testing Library for the frontend components.
+- We will use Python with Flask for the backend API and Vite/React with TypeScript/TailwindCSS for the frontend user interface. GitHub will be used for version control along with VS Code as our development environment. For testing, we will use Pytest for the Python backend and Vitest for the frontend components.
 - The backend API we will be using is Jikan API (4.0.0), an open-source REST API.
 - API Documentation: https://docs.api.jikan.moe
 
@@ -82,7 +82,7 @@ Figma Link: https://www.figma.com/design/hPtur90ZxpL8rufZbKKvje/AniFind?node-id=
   - Search button: a search button that is used to activate/generate a list of recommended anime based on the user's search input
   - Recommended anime: list filled with similar anime is generated after the user input is given
   - Footer
-<img width="578" height="1064" alt="image" src="https://github.com/user-attachments/assets/1e0ac0d9-0560-4077-b0a4-0cf025e1ddde" />
+<img width="746" height="1380" alt="image" src="https://github.com/user-attachments/assets/18048435-720a-41ec-8892-95c51f1d0e6b" />
 
 - About Page
   - Header
