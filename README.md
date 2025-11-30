@@ -82,14 +82,14 @@ Figma Link: https://www.figma.com/design/hPtur90ZxpL8rufZbKKvje/AniFind?node-id=
   - Search button: a search button that is used to activate/generate a list of recommended anime based on the user's search input
   - Recommended anime: list filled with similar anime is generated after the user input is given
   - Footer
-<img width="746" height="1380" alt="image" src="https://github.com/user-attachments/assets/18048435-720a-41ec-8892-95c51f1d0e6b" />
+<img width="580" height="1374" alt="image" src="https://github.com/user-attachments/assets/18048435-720a-41ec-8892-95c51f1d0e6b" />
 
 - About Page
   - Header
   - Our Goal: Includes title and paragraph explaining the purpose of the website
   - Contributors: Includes title and paragraph displaying the contributors of the website
   - Footer
-<img width="580" height="706" alt="image" src="https://github.com/user-attachments/assets/def22cd5-381c-4d59-b514-edcf43bb1388" />
+<img width="580" height="1374" alt="image" src="https://github.com/user-attachments/assets/def22cd5-381c-4d59-b514-edcf43bb1388" />
   
 ## Class Diagram
  > Include a **class diagram(s)** for your project and a **description** of the diagram(s). Your class diagram(s) should include all the main classes you plan for the project. This should be in sufficient detail that another group could pick up the project this point and successfully complete it. Use proper UML notation (as discussed in the course slides).
