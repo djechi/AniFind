@@ -64,7 +64,7 @@ const SearchBar = () => {
     }
   };
 
-  // Handles recommend button click
+  // Handles search button click
   const handleAnimeClick = (anime) => {
     setSelectedAnime(anime);
     setQuery(anime.title);
@@ -72,6 +72,7 @@ const SearchBar = () => {
     setShowSuggestions(false);
   };
 
+  // Handles clicking suggestion inputs
   const handleInputChange = (e) => {
     setQuery(e.target.value);
 
@@ -111,7 +112,8 @@ const SearchBar = () => {
         />
 
         {suggestions.length > 0 && showSuggestions == true && (
-          <div className="bg-ani-grey-100 mt-[5vh] absolute z-10 left-0 rounded-xl">
+          <div className="bg-ani-grey-100 mt-[5vh] absolute z-10 left-0 rounded-xl"
+          data-testid="suggestions-container">
             {suggestions.map((anime) => (
               <div
                 key={anime.mal_id}

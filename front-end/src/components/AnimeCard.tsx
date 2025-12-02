@@ -3,7 +3,7 @@ import type { AnimeCardProps } from "../types/interfaces.ts";
 
 const AnimeCard: FC<AnimeCardProps> = ({ title, image, genre, rating }) => {
   return (
-    <div className="items-center justify-center text-left h-[40vh] w-[32vh]">
+    <div className="items-center justify-center text-center h-[40vh] w-[32vh]">
       <img
         src={image}
         alt={title}
