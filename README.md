@@ -166,6 +166,7 @@ Figma Link: https://www.figma.com/design/hPtur90ZxpL8rufZbKKvje/AniFind?node-id=
 - https://nodejs.org/en
 - https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets
 
+ ### Step-By-Step Guide to demo program
  1) Open your terminal and enter a suitable directory using the cd command
  2) Type in git clone --recursive within the terminal
  3) Launch the back-end API server locally (open a separate terminal): 
