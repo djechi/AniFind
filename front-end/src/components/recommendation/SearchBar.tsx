@@ -129,7 +129,7 @@ const SearchBar = () => {
 
       <div className="mx-auto text-center justify-center mt-[40vh]">
         {recommendations.length > 0 && ( // Display anime recommendation title if list is not empty
-          <p className="text-ani-white-100 text-[4vh]">
+          <p className="font-ani-default text-ani-white-100 text-[4vh]">
             Recommended anime based on {showRecommendTitle}
           </p>
         )}

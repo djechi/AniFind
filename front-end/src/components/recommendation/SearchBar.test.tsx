@@ -1,4 +1,3 @@
-import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
 import SearchBar from "./SearchBar";
 import { describe, it, expect, afterEach, vi } from "vitest";
@@ -18,7 +17,7 @@ describe("SearchBar", () => {
 
   it("Does not fetch suggestions when typing less than 3 letters", () => {
     // Mock fetch (detects if code calls fetch)
-    global.fetch = vi.fn();
+    globalThis.fetch = vi.fn();
 
     render(<SearchBar />);
     const searchInput = screen.getAllByTestId("search-input");

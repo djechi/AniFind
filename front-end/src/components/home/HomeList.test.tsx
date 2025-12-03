@@ -1,4 +1,3 @@
-import React from "react";
 import { render, screen } from "@testing-library/react";
 import HomeList from "./HomeList";
 import { describe, it, expect } from "vitest";
