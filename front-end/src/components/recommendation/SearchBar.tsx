@@ -1,5 +1,5 @@
 import AnimeCard from "../../components/AnimeCard";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import SearchButtonImage from "../../../public/recommend/Search.webp";
 import SearchTitle from "./SearchTitle";
 import LoadingGIF from "../../../public/recommend/loading.webp";
