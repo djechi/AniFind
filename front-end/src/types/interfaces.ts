@@ -1,7 +1,8 @@
 export interface AnimeCardProps {
-  // key: number;
   title: string;
   image: string;
-  rating: string;
-  genre: string;
+
+  // rating and genre are optional
+  rating?: string;
+  genre?: string;
 }

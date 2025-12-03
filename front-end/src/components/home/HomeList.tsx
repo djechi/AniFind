@@ -7,23 +7,12 @@ const AnimeCardDisplay = () => {
   const [ratingAnime, setRatingAnime] = useState([]);
 
   useEffect(() => {
-    const fetchTrendingList = async () => {
+    const fetchLists = async () => {
       try {
         const response = await fetch(`${API_BASE_URL}/home`);
         const data = await response.json();
         console.log("API Response:", data); // Show what data is being fetched
         if (data.trending) setTrendingAnime(data.trending.slice(0, 12)); // Get data for 12 anime
-      } catch (error) {
-        console.error(error);
-        throw error;
-      }
-    };
-
-    const fetchRatingList = async () => {
-      try {
-        const response = await fetch(`${API_BASE_URL}/home`);
-        const data = await response.json();
-        console.log("API Response:", data); // Show what data is being fetched
         if (data.rating) setRatingAnime(data.rating.slice(0, 12)); // Get data for 12 anime
       } catch (error) {
         console.error(error);
@@ -31,8 +20,7 @@ const AnimeCardDisplay = () => {
       }
     };
 
-    fetchTrendingList();
-    fetchRatingList();
+    fetchLists();
   }, []);
 
   return (
@@ -57,7 +45,7 @@ const AnimeCardDisplay = () => {
         </div>
       </div>
 
-      <div className="mt-[36vh]">
+      <div className="mt-[36vh] mb-[30vh]">
         <p className="font-ani-default text-ani-white-100 text-[5vh] mb-[3vh] text-left">
           Highest Rated Anime
         </p>

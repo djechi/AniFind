@@ -1,5 +1,5 @@
 import AnimeCard from "../../components/AnimeCard";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import SearchButtonImage from "../../../public/recommend/Search.webp";
 import SearchTitle from "./SearchTitle";
 import LoadingGIF from "../../../public/recommend/loading.webp";
@@ -64,7 +64,7 @@ const SearchBar = () => {
     }
   };
 
-  // Handles recommend button click
+  // Handles search button click
   const handleAnimeClick = (anime) => {
     setSelectedAnime(anime);
     setQuery(anime.title);
@@ -72,6 +72,7 @@ const SearchBar = () => {
     setShowSuggestions(false);
   };
 
+  // Handles clicking suggestion inputs
   const handleInputChange = (e) => {
     setQuery(e.target.value);
 
@@ -108,6 +109,7 @@ const SearchBar = () => {
           placeholder="Search for anime..."
           value={query}
           onChange={handleInputChange}
+          data-testid="search-input"
         />
 
         {suggestions.length > 0 && showSuggestions == true && (
@@ -127,7 +129,7 @@ const SearchBar = () => {
 
       <div className="mx-auto text-center justify-center mt-[40vh]">
         {recommendations.length > 0 && ( // Display anime recommendation title if list is not empty
-          <p className="text-ani-white-100 text-[4vh]">
+          <p className="font-ani-default text-ani-white-100 text-[4vh]">
             Recommended anime based on {showRecommendTitle}
           </p>
         )}

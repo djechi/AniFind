@@ -9,7 +9,7 @@ const Header = () => {
         </p>
       </Link>
 
-      <p className="items-center text-[2.2vh] flex ml-[23vw] gap-x-[5vw]">
+      <p className="font-ani-default items-center text-[2.2vh] flex ml-[23vw] gap-x-[5vw]">
         <Link to="/">Home</Link>
         <Link to="/recommendation">Recommendation</Link>
         <Link to="/about">About</Link>
