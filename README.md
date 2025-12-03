@@ -129,9 +129,74 @@ Figma Link: https://www.figma.com/design/hPtur90ZxpL8rufZbKKvje/AniFind?node-id=
 >  * Each team member should also submit the Peer Evaluation Form on Canvas for this final phase. In this form, you need to fill in the names of all team members, the percentage of work contributed by each member for the final phase, and a description of their contributions. Remember that each team member should submit the form individually.
  
  ## Screenshots
- > Screenshots of the input/output after running your application
+ ### Home Page
+- Header and Trending List
+<img width="680" height="360" alt="image" src="https://github.com/user-attachments/assets/bac7a385-c3fd-4f9a-859f-401acd7158d7" />
+
+- Highest Rating List
+<img width="680" height="360" alt="image" src="https://github.com/user-attachments/assets/03b858ab-9213-46f9-87cc-11bd900ce0cd" />
+
+- Footer
+<img width="680" height="360" alt="image" src="https://github.com/user-attachments/assets/6512f939-8810-47a0-a9f5-6a8e7df0145b" />
+
+ ### Recommendation Page
+ - Default screen
+<img width="680" height="360" alt="image" src="https://github.com/user-attachments/assets/265229bc-c6db-4def-87f7-9ba5307bd2d9" />
+ 
+ - Search bar suggestions
+<img width="680" height="360" alt="image" src="https://github.com/user-attachments/assets/b7abccb0-e330-446d-97d0-ccfa4d1c6cf7" />
+   
+ - Hovering/clicking suggestions
+<img width="680" height="360" alt="image" src="https://github.com/user-attachments/assets/820232b8-f2f6-49a0-bcb2-fff7fa1d9647" />
+
+ - Clicking search button
+<img width="680" height="360" alt="image" src="https://github.com/user-attachments/assets/e81b86c9-a23e-4a5e-a9f4-c6ba1978cd1e" />
+
+ - Loading screen
+<img width="680" height="360" alt="image" src="https://github.com/user-attachments/assets/7a1f6919-5d71-4054-8392-fd41a021a325" />
+   
+ - Rendered List
+<img width="680" height="360" alt="image" src="https://github.com/user-attachments/assets/1cafc07f-0462-4cc7-88dd-038bd591fb76" />
+
+ ### About Page
+ 
  ## Installation/Usage
- > Instructions on installing and running your application
+
+ ### Downloads (For Front-End)
+- https://nodejs.org/en
+- https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets
+
+ 1) Open your terminal and enter a suitable directory using the cd command
+ 2) Type in git clone --recursive within the terminal
+ 3) Launch the back-end API server locally (open a separate terminal): 
+ ### Linux/Mac
+ * cd flask-server 
+ * python3 -m venv venv
+ * source venv/bin/activate
+ * pip3 install Flask
+ * pip3 install requests
+ * pip3 install flask-cors
+ * python3 server.py
+ 
+ ### Windows
+ * cd flask-server
+ * python -m venv venv
+ * venv\Scripts\activate
+ * pip install Flask
+ * pip install requests
+ * pip install flask-cors
+ * python server.py
+
+ 4) Launch the front-end web application locally (open a separate terminal):
+ * cd front-end
+ * npm install
+ * npm run dev
+ * ctr + click local host link 
+
  ## Testing
  > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
+
+ ### Front End Testing
+Front end components within Vite/React were tested by using Vitest. Components that were tested include the Home Page trending/rating lists,
+Recommendation Search Bar, and the Anime Card.
  
