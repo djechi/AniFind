@@ -109,11 +109,11 @@ const SearchBar = () => {
           placeholder="Search for anime..."
           value={query}
           onChange={handleInputChange}
+          data-testid="search-input"
         />
 
         {suggestions.length > 0 && showSuggestions == true && (
-          <div className="bg-ani-grey-100 mt-[5vh] absolute z-10 left-0 rounded-xl"
-          data-testid="suggestions-container">
+          <div className="bg-ani-grey-100 mt-[5vh] absolute z-10 left-0 rounded-xl">
             {suggestions.map((anime) => (
               <div
                 key={anime.mal_id}
