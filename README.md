@@ -200,4 +200,6 @@ Figma Link: https://www.figma.com/design/hPtur90ZxpL8rufZbKKvje/AniFind?node-id=
  ### Front End Testing
 Front end components within Vite/React were tested by using Vitest. Components that were tested include the Home Page trending/rating lists,
 Recommendation Search Bar, and the Anime Card.
- 
+
+### Back End Testing
+Back-end testing was performed using pytest and unittest.mock. The components tested were the homepage, the recommendation page, the recommendation query, and the Jikan API. 
