@@ -159,7 +159,8 @@ Figma Link: https://www.figma.com/design/hPtur90ZxpL8rufZbKKvje/AniFind?node-id=
 <img width="680" height="360" alt="image" src="https://github.com/user-attachments/assets/1cafc07f-0462-4cc7-88dd-038bd591fb76" />
 
  ### About Page
- 
+ <img width="680" height="360" alt="image" src="https://github.com/user-attachments/assets/8d7f0b0e-1efd-4b8a-a793-20f4c9ec9801" />
+
  ## Installation/Usage
 
  ### Downloads (For Front-End)
@@ -198,8 +199,23 @@ Figma Link: https://www.figma.com/design/hPtur90ZxpL8rufZbKKvje/AniFind?node-id=
  > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
 
  ### Front End Testing
-Front end components within Vite/React were tested by using Vitest. Components that were tested include the Home Page trending/rating lists,
+Front-end components within Vite/React were tested by using Vitest. Components that were tested include the Home Page trending/rating lists,
 Recommendation Search Bar, and the Anime Card.
+
+#### Test commands (Front-end)
+- cd front-end 
+- npm test (runs test)
 
 ### Back End Testing
 Back-end testing was performed using pytest and unittest.mock. The components tested were the homepage, the recommendation page, the recommendation query, and the Jikan API. 
+
+#### Unit Test Packages
+- Windows
+- pip install pytest
+- pip install pytest-mock
+
+#### Test commands (Back-end)
+- cd flask-server
+- pytest -v    (runs test)
+- pytest -v -s (runs test and prints the result)
+
