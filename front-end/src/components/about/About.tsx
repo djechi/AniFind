@@ -1,6 +1,6 @@
 const AboutSection = () => {
   return (
-    <div className="mt-[8vh] mb-[8vh] flex flex-col justify-center text-center items-center h-full w-full">
+    <div className="mt-[12vh] mb-[6.5vh] flex flex-col justify-center text-center items-center h-full w-full">
       <div className="w-[60vw] h-[40vh]">
         <p className="font-ani-default text-ani-white-100 text-[4vh]">
           Our Goal
