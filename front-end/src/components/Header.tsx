@@ -8,7 +8,7 @@ const Header = () => {
           Ani<span className="text-ani-green-100">Find</span>
         </p>
       </Link>
-  
+
       <p className="font-ani-default text-[2.2vh] flex gap-x-[5vw]">
         <Link to="/">Home</Link>
         <Link to="/recommendation">Recommendation</Link>

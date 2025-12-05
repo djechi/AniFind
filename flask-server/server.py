@@ -1,8 +1,7 @@
-from flask import Flask, jsonify
+from flask import Flask
 from flask_cors import CORS
 from homePage import homeBP
 from recommendPage import recommendBP
-import tracemalloc
 
 app = Flask(__name__)
 CORS(app)
