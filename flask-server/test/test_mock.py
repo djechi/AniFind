@@ -1,9 +1,8 @@
-import sys, os
+import sys, os, pytest
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from server import app
 from unittest.mock import patch
-import pytest
 
 
 @pytest.fixture
