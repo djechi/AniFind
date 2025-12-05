@@ -85,7 +85,7 @@ const SearchBar = () => {
   };
 
   return (
-    <div className="flex flex-col mb-[20vh] items-center justify-center w-full h-full">
+    <div className="flex flex-col mt-[8vh] mb-[20vh] items-center justify-center w-full h-full">
       <SearchTitle />
 
       {loading == true && (
