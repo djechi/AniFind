@@ -32,7 +32,7 @@ Authors: [DJ Echipare](https://github.com/djechi) [Alvin Truong](https://github.
 <img width="1486" height="1180" alt="image" src="https://github.com/user-attachments/assets/cc9acf1f-9f22-44d3-8c8f-8f48cddafd6a" />
 
 
-### Screen Layouts
+### Mock Screen Layouts
 Figma Link: https://www.figma.com/design/hPtur90ZxpL8rufZbKKvje/AniFind?node-id=0-1&t=tYE6BlYcwI643Pk4-1
 
 - General components
