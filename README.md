@@ -63,7 +63,7 @@ Figma Link: https://www.figma.com/design/hPtur90ZxpL8rufZbKKvje/AniFind?node-id=
 <img width="580" height="1374" alt="image" src="https://github.com/user-attachments/assets/def22cd5-381c-4d59-b514-edcf43bb1388" />
   
 ## Class Diagram
-> <img width="1631" height="1025" alt="image" src="https://github.com/user-attachments/assets/cfa81abb-97b4-4bb6-954a-3a0ac7277516" />
+> <img width="1668" height="990" alt="image" src="https://github.com/user-attachments/assets/48d092fc-a3a2-4c9d-990d-5c5eb746c9c4" />
 > One of the SOLID Principles that I applied was the Interface Segregation Principle, which involved creating a separate JSON file for recommendations. Previously, the recommendations were displayed on the home page, but they should have been on the recommendation page. This change helped me write better code because the logic for the recommendation was now in the correct Python file, which made it easier to distinguish which functions belong to each file.  Another SOLID Principle that I applied was the Single-Responsibility Principle, which involved creating separate Flask routes for the JSON files. This ensured that the flask routes had the correct JSON files and that those not needed for that specific route were excluded.
  
  ## Screenshots
@@ -150,7 +150,11 @@ Back-end testing was performed using pytest and unittest.mock. The components te
 - pip install pytest
 - pip install pytest-mock
 
+- Linux/Mac
+- pip3 install pytest
+- pip install pytest-mock
+
 #### Test commands (Back-end)
 - cd flask-server
-- pytest -v    (runs test)
-- pytest -v -s (runs test and prints the result)
+- pytest -v test/ (runs test)
+- pytest -v -s test/ (runs test and prints the result)
